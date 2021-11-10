@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa;
+}
+
+ul {
+    position: absolute;
+    display: flex;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0 40px;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    transform: perspective(1000px) rotate(-35deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 10.5px;
+    left: -20px;
+    background: #b1b1b1;
+    width: 20px;
+    height: 100%;
+    transform: rotate(0deg) skewY(-45deg);
+    transition: 0.5s
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    background: #b1b1b1;
+    width: 100%;
+    height: 20px;
+    transform: rotate(0deg) skewX(-45deg);
+    transition: 0.5s;
+}
+
+
+/* Facebook */
+
+ul li:nth-child(1):hover a::before {
+    background: rgb(141, 141, 231);
+}
+
+ul li:nth-child(1):hover a::after {
+    background: rgb(141, 141, 231);
+}
+
+ul li:nth-child(1):hover {
+    transform: perspective(1000px) rotate(-35deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 10px rgba(0, 0, 0, 0.5);
+    background: blue;
+    color: #fff;
+}
+
+
+/* Instagram */
+
+ul li:nth-child(2):hover a::before {
+    background: rgb(231, 141, 156);
+}
+
+ul li:nth-child(2):hover a::after {
+    background: rgb(231, 141, 156);
+}
+
+ul li:nth-child(2):hover {
+    transform: perspective(1000px) rotate(-35deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 10px rgba(0, 0, 0, 0.5);
+    background: rgb(248, 7, 55);
+    color: #fff;
+}
+
+
+/* Twitter */
+
+ul li:nth-child(3):hover a::before {
+    background: rgb(153, 207, 229);
+}
+
+ul li:nth-child(3):hover a::after {
+    background: rgb(153, 207, 229);
+}
+
+ul li:nth-child(3):hover {
+    transform: perspective(1000px) rotate(-35deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 10px rgba(0, 0, 0, 0.5);
+    background: rgb(7, 152, 248);
+    color: #fff;
+}
+
+
+/* Github */
+
+ul li:nth-child(4):hover a::before {
+    background: rgb(173, 173, 173);
+}
+
+ul li:nth-child(4):hover a::after {
+    background: rgb(173, 173, 173);
+}
+
+ul li:nth-child(4):hover {
+    transform: perspective(1000px) rotate(-35deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 10px rgba(0, 0, 0, 0.5);
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+
+
+/* Linkedin */
+
+ul li:nth-child(5):hover a::before {
+    background: rgb(141, 150, 231);
+}
+
+ul li:nth-child(5):hover a::after {
+    background: rgb(141, 150, 231);
+}
+
+ul li:nth-child(5):hover {
+    transform: perspective(1000px) rotate(-35deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 10px rgba(0, 0, 0, 0.5);
+    background: rgb(6, 43, 209);
+    color: #fff;
+}
